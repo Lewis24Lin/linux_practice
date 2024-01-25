@@ -58,8 +58,10 @@ echo "function"
 echo ""
 
 function sayHi(){
-	echo "function name: ${0}"
-	echo "Hi, ${1} ${2}"	
+	echo "number of arguments: $#"
+	echo "arguments: $@"
+	echo "function name: ${0}" # ${0} don't get function name
+	echo "Hi, ${1} ${2}"
 }
 
 name=lewis
