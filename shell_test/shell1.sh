@@ -62,6 +62,7 @@ function sayHi(){
 	echo "arguments: $@"
 	echo "function name: ${0}" # ${0} don't get function name
 	echo "Hi, ${1} ${2}"
+	echo "Hi $3"
 }
 
 name=lewis
@@ -140,5 +141,12 @@ do
 	s=$(($s+$i))	
 done
 echo ${s}
+echo ""
+
+x=0
+for((x=0;x<3;x+=1))
+do
+	echo $x
+done
 
 ./shell2.sh
