@@ -9,9 +9,11 @@ echo "$1" "$2" "$3" "$4"
 echo "$@"
 
 shift
+echo $#
 echo "$0 $1 $2 $3 $4"
 
 shift 2
+echo $#
 echo "$0 $1 $2 $3 $4"
 
 echo "--------------------"
