@@ -150,5 +150,6 @@ for((x=0;x<3;x+=1))
 do
 	echo $x
 done
+echo ""
 
 ./shell2.sh
