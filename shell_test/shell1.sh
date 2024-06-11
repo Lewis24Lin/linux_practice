@@ -7,14 +7,19 @@ echo "whole param: '$@'"
 echo $@
 echo "$1" "$2" "$3" "$4"
 echo "$@"
+echo ""
 
 shift
 echo $#
 echo "$0 $1 $2 $3 $4"
+echo "$1"
+echo ""
 
 shift 2
 echo $#
 echo "$0 $1 $2 $3 $4"
+echo "$1"
+echo ""
 
 echo "--------------------"
 
@@ -151,5 +156,8 @@ do
 	echo $x
 done
 echo ""
+
+echo "--------------------"
+echo "shell2"
 
 ./shell2.sh
